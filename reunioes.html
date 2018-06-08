@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </head>
+
+<body style="background-repeat:no-repeat;background-size:cover;" class="bg-dark">
+  <div class="py-3">
+    <div class="container-fluid py-0">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills flex-column">
+            <h1 class="">Reuniões</h1>
+            <li class="nav-item w3-teal" style="border-left: 4px solid #fff; border-bottom: 1px solid #fff">
+              <button onclick="myFunction('reuniao1')" class="w3-button w3-block w3-left-align w3-text-black"> Reunião 13/06&nbsp; </button>
+              <div id="reuniao1" class="w3-container w3-hide w3-blue-grey">
+                <h4>Algum subtitulo</h4>
+                <!-- Estamos aqui tentando colocar botão para acessar a reuniao -->
+                <p>Conteúdo simplificado da reuniao + botão para ir pra reunião</p>
+                <a class="btn btn-primary"onclick="window.location.href = 'r1.html';" class="w3-button w3-left w3-text-white w3-teal" href="reuniao_13.html" style="border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff">
+                Reunião 13/06&nbsp; </a>
+              </div>
+            </li>
+            <li class="nav-item w3-teal" style="border-left: 4px solid blue; border-bottom: 1px solid #fff">
+              <button onclick="myFunction('reuniao2')" class="w3-button w3-block w3-left-align w3-text-black"> Reunião 16/06&nbsp; </button>
+              <div id="reuniao2" class="w3-container w3-hide w3-blue-grey">
+                <h4>Algum subtitulo 2</h4>
+                <p>Conteúdo simplificado da reuniao 2 + botão para ir pra reunião 2</p>
+                <a class="btn btn-primary" href="reuniao_13.html" onclick="" class="w3-button w3-left w3-text-white w3-teal" style="border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff"> Reunião 16/06&nbsp; </a>
+              </div>
+            </li>
+            <li class="nav-item w3-teal" style="border-left: 4px solid #fff; border-bottom: 1px solid #fff">
+              <button onclick="myFunction('reuniao3')" class="w3-button w3-block w3-left-align w3-text-black"> Reunião 20/06&nbsp;</button>
+              <div id="reuniao3" class="w3-container w3-hide w3-blue-grey">
+                <h4>Algum subtitulo 3</h4>
+                <p>Conteúdo simplificado da reuniao 3 + botão para ir pra reunião 3</p>
+                <a class="btn btn-primary" href="reuniao_13.html" onclick="" class="w3-button w3-left w3-text-white w3-teal" style="border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff"> Reunião 20/06&nbsp; </a>
+              </div>
+            </li>
+            <li class="nav-item w3-teal" style="border-left: 4px solid blue; border-bottom: 1px solid #fff">
+              <button onclick="myFunction('reuniao4')" class="w3-button w3-block w3-left-align w3-text-black"> Reunião 30/06&nbsp;</button>
+              <div id="reuniao4" class="w3-container w3-hide w3-blue-grey">
+                <h4>Algum subtitulo 4</h4>
+                <p>Conteúdo simplificado da reuniao 4 + botão para ir pra reunião 4</p>
+                <a class="btn btn-primary" href="reuniao_13.html" onclick="" class="w3-button w3-left w3-text-white w3-teal" style="border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff"> Reunião 30/06&nbsp; </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Esse script serve para fazer o acordeão das reunioes -->
+  <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

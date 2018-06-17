@@ -21,12 +21,10 @@ public class Sistema {
         tarBUild = new HTMLTarefasBuilder();
 	}
 
-
 	public static synchronized  Sistema getInstance() throws SQLException, ClassNotFoundException{
 	    if(uniqueInstance == null)
 	        uniqueInstance = new Sistema();
-
-	       return uniqueInstance;
+	    return uniqueInstance;
     }
     public static Membro getMembro() {
         return usr;

@@ -16,6 +16,7 @@ public class Pkg1main extends HttpServlet{
     private Sistema sist;
     private MysqlConnect mysql;
     private HTMLTarefasBuilder htmlTarBuild;
+    private String Name =null;
 
     private void loadTarefas()throws SQLException {
         String querry = "Select definicao from tarefas";
@@ -80,13 +81,14 @@ public class Pkg1main extends HttpServlet{
             ArrayList<String> str = mysql.sqlSelect(querry, 3);
             if(str.size() > 0) {
                 flag = Boolean.TRUE;
+                Name = str.get(0);
                 Membro usr = new Membro(str.get(0),str.get(2), str.get(1), Boolean.TRUE);
                 sist.setMembro(usr);
-                String querry2 = "UPDATE membros SET status=1 WHERE username='"+username+"'";
-                mysql.sqlUpdate(querry2);
                 this.loadMembros();
                 this.loadReunioes();
                 this.loadTarefas();
+                String querry2 = "UPDATE membros SET status=1 where username='"+ username+ "'";
+                mysql.sqlUpdate(querry2);
             }
         }catch(Exception e){
             flag = Boolean.FALSE;
@@ -103,24 +105,31 @@ public class Pkg1main extends HttpServlet{
         }catch(Exception excpt){
             excpt.printStackTrace();
         }
-        htmlBuild = sist.getHtmlBuild();
-        htmlTarBuild = sist.getHtmlTarefasBuilder();
-        session = request.getSession();
+
         String username = request.getParameter("username");
         String psswrd = request.getParameter("password");
+
         String urlString = "http://localhost:8080/orkut/login.html";
-        if(this.connectBD(username, psswrd))
-            urlString = "http://localhost:8080/orkut/orkut.html";
-        ArrayList<Tarefa> tar = sist.getSistTarefa().getTarefas();
-        ArrayList<Membro> off =sist.getSistComunicacao().getMembrosOffline();
-        ArrayList<Membro> on =sist.getSistComunicacao().getMembrosOnline();
-        ArrayList<Tarefa> pend = sist.getSistTarefa().getTarefasPendents();
-        htmlBuild.makeHome(on, off, pend);
-        htmlTarBuild.makeHome(tar);
-        sist.getSistComunicacao().setMembrosOffline(new ArrayList<Membro>());
-        sist.getSistComunicacao().setMembrosOnline(new ArrayList<Membro>());
-        sist.getSistTarefa().setTarefasPendente(new ArrayList<Tarefa>());
-        sist.getSistTarefa().setTarefas(new ArrayList<Tarefa>());
+        if(this.connectBD(username, psswrd)) {
+            htmlBuild = sist.getHtmlBuild();
+            htmlTarBuild = sist.getHtmlTarefasBuilder();
+            session = request.getSession();
+            session.setMaxInactiveInterval(5);
+            session.setAttribute("username", username);
+            urlString = "http://localhost:8080/orkut/orkut_"+Name+".html";
+            session.setAttribute("urlMain", "/opt/tomcat/webapps/orkut/orkut_"+Name+".html");
+            session.setAttribute("Tarefas", "/opt/tomcat/webapps/orkut/tarefas_"+Name+".html");
+            ArrayList<Tarefa> tar = sist.getSistTarefa().getTarefas();
+            ArrayList<Membro> off =sist.getSistComunicacao().getMembrosOffline();
+            ArrayList<Membro> on =sist.getSistComunicacao().getMembrosOnline();
+            ArrayList<Tarefa> pend = sist.getSistTarefa().getTarefasPendents();
+            htmlBuild.makeHome(on, off, pend, Name);
+            htmlTarBuild.makeHome(tar, Name);
+            sist.getSistComunicacao().setMembrosOffline(new ArrayList<Membro>());
+            sist.getSistComunicacao().setMembrosOnline(new ArrayList<Membro>());
+            sist.getSistTarefa().setTarefasPendente(new ArrayList<Tarefa>());
+            sist.getSistTarefa().setTarefas(new ArrayList<Tarefa>());
+        }
         response.sendRedirect(response.encodeRedirectURL(urlString));
 
     }

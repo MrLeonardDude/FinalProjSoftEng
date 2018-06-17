@@ -5,14 +5,15 @@ import java.util.ArrayList;
 
 public class HTMLBuilder {
 
-    public void makeHome(ArrayList<Membro> user, ArrayList<Membro> userOff, ArrayList<Tarefa> pendente){
+    public void makeHome(ArrayList<Membro> user, ArrayList<Membro> userOff, ArrayList<Tarefa> pendente, String Name){
 
-        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/orkut.html")){
+        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/orkut_"+ Name+ ".html")){
             out.println("<!DOCTYPE html>\n" +
                     "<html>\n" +
                     "\n" +
                     "<head>\n" +
-                    "  <meta charset=\"utf-8\">\n" +
+                    "  <meta http-equiv=\"refresh\" content=\"30\" />" +
+                    "<meta charset=\"utf-8\">\n" +
                     "  <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\" type=\"text/css\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://v40.pingendo.com/assets/4.0.0/default/theme.css\" type=\"text/css\"> </head>\n" +
@@ -31,15 +32,15 @@ public class HTMLBuilder {
                     "          </li>\n");
 
                     out.println("<li class=\"nav-item dropdown\" >" +
-                                "<a class=\"nav-link dropdown-toggle\" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Tarefas </a>"+
+                                "<a class=\"nav-link dropdown-toggle\" href=\"tarefas_"+Name+".html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Tarefas </a>"+
                                 "<div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">"+
-                                  "<a class=\"dropdown-item\" href=\"tarefas.html\" target=\"conteudo\">Listar Tarefas</a>"+
+                                  "<a class=\"dropdown-item\" href=\"tarefas_"+Name+".html\" target=\"conteudo\">Listar Tarefas</a>"+
                                   "<a class=\"dropdown-item\" href=\"adicionar_tarefa.html\" target=\"conteudo\">Adicionar Tarefa</a>"+
                                 "</div>"+
                               "</li>");
 
 
-                    out.println("          </li>\n" +
+                    out.println(
                     "          <li class=\"nav-item dropdown\" >\n" +
                     "            <a class=\"nav-link dropdown-toggle\" href=\"reunioes.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Reuniões </a>\n" +
                     "            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +

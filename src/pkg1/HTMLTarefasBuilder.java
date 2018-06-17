@@ -4,9 +4,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class HTMLTarefasBuilder {
-    public void makeHome(ArrayList<Tarefa> pendente){
+    public void makeHome(ArrayList<Tarefa> pendente, String Name){
 
-        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/tarefas.html")){
+        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/tarefas_"+ Name + ".html")){
             out.println("<!DOCTYPE html>\n" +
                     "<html>\n" +
                     "\n" +

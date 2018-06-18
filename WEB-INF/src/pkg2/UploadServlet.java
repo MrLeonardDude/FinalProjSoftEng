@@ -33,10 +33,7 @@ public class UploadServlet extends HttpServlet{
             conn = sist.getMysql();
             String sql = "INSERT INTO files (id, title, file) values (?, ?, ?)";
             int row = conn.sqlUploadFile(sql, idTemp, fileName, fileContent, filePart);
-            if (row > 0) {
-                urlString = session.getAttribute("urlMain").toString();
-            }
-
+            urlString = "http://localhost:8080/orkut/inicio.html    ";
         }catch(Exception e){e.printStackTrace();}
         response.sendRedirect(response.encodeRedirectURL(urlString));
     }

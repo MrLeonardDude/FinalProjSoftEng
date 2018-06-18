@@ -19,7 +19,7 @@ public class SessionManager implements HttpSessionListener{
 
     public void sessionDestroyed(HttpSessionEvent arg){
         try{
-            /*sist = Sistema.getInstance();
+            sist = Sistema.getInstance();
             conn = sist.getMysql();
             currSesssion = arg.getSession();
             usr = currSesssion.getAttribute("username");
@@ -30,7 +30,7 @@ public class SessionManager implements HttpSessionListener{
             file_main.delete();
             file_tar.delete();
             String querry2 = "UPDATE membros SET status=0 where username='"+usr+"'";
-            conn.sqlUpdate(querry2);*/
+            conn.sqlUpdate(querry2);
         }catch(Exception excpt){
             excpt.printStackTrace();
         }

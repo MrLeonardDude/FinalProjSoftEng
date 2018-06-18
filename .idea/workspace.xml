@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62da17dd-0eaa-486f-b259-049b9698df51" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/MysqlConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/MysqlConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Pkg1main.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Pkg1main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contato.html" beforeDir="false" afterPath="$PROJECT_DIR$/contato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orkut.iml" beforeDir="false" afterPath="$PROJECT_DIR$/orkut.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orkut_Juliana.html" beforeDir="false" afterPath="$PROJECT_DIR$/orkut_Juliana.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orkut_Leonardo.html" beforeDir="false" afterPath="$PROJECT_DIR$/orkut_Leonardo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/FileManagers.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/HTMLBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/HTMLTarefasBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/HistoricoTarefa.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HistoricoTarefa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/Membro.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/MysqlConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/Pkg1main.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/Reuniao.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Reuniao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/SistemaComunicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SistemaComunicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/SistemaReuniao.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SistemaReuniao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/SistemaTarefa.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SistemaTarefa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/SqlTst.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SqlTst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/Tarefa.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/SessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/SessionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg2/FileMan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg2/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg2/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orkut_Juliana.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orkut_Leonardo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarefas_Juliana.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarefas_Leonardo.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pkg1main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pkg1main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="128" column="41" selection-start-line="128" selection-end-line="129" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +47,8 @@
       <file leaf-file-name="SessionManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,23 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileMan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UploadServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="160">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,9 +113,10 @@
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/FileManagers.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/FileManagers.java" />
         <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" />
       </list>
     </option>
   </component>
@@ -311,6 +284,14 @@
       <option name="presentableId" value="Default" />
       <updated>1528386728826</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit Session getURL">
+      <created>1529295299166</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529295299166</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -347,6 +328,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Session getURL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Session getURL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -702,6 +687,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -711,38 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="128" column="41" selection-start-line="128" selection-end-line="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

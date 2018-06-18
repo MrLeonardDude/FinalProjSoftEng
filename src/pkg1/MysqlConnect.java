@@ -1,4 +1,6 @@
 package pkg1;
+import javax.servlet.http.Part;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -42,10 +44,21 @@ public class MysqlConnect {
         preparedStmt.executeUpdate();
     }
 
+    public int sqlUploadFile(String querry, String idTemp, String title, InputStream inputStream, Part filePart) throws SQLException{
+        PreparedStatement preparedStatement = conn.prepareStatement(querry);
+        preparedStatement.setString(1, idTemp);
+        preparedStatement.setString(2, title);
+
+        if (inputStream != null)
+        {
+            preparedStatement.setBinaryStream(3, inputStream, (int) filePart.getSize());
+        }
+        return preparedStatement.executeUpdate();
+    }
+
     public static void disconnect() throws SQLException{
         conn.close();
     }
-
 
 }
 

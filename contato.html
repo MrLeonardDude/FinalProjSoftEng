@@ -35,14 +35,16 @@
               <span class="time-left">11:05</span> - Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
           </div>
         </div>
-        <div class="form-group bg-dark">
-          <label for="exampleTextarea" >Mensagem </label><a href="#"> Chat de voz</a> <a href="#"> Chat de video</a>
-          <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
-        </div>
-        <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
-					Compartilhar arquivo:
-        <input type="file" />
-      </br>
+
+        <form method="post" action="UploadFileController" enctype="multipart/form-data">
+            <div class="form-group bg-dark">
+              <label for="exampleTextarea" >Mensagem </label><a href="#"> Chat de voz</a> <a href="#"> Chat de video</a>
+              <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
+            </div>
+            <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+					       Compartilhar arquivo:
+                    <input type="file" />
+                </form>
         <div class="modal-footer bg-dark">
           <button type="button" class="btn btn-primary">Enviar</button>
           <button type="button" class="btn btn-danger" data-dismiss="modal">Limpar</button>

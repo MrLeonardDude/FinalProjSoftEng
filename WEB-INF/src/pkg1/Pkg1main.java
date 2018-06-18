@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class Pkg1main extends HttpServlet{
 
+    private static final long serialVersionUID = 178932193873712398L;
     private static HttpSession session = null;
     private HTMLBuilder htmlBuild;
     private Sistema sist;
@@ -99,12 +100,7 @@ public class Pkg1main extends HttpServlet{
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
         response.setContentType("text/html; charset=UTF-8");
-        try{
-            sist = Sistema.getInstance();
-
-        }catch(Exception excpt){
-            excpt.printStackTrace();
-        }
+        try{ sist = Sistema.getInstance(); }catch(Exception excpt){ excpt.printStackTrace(); }
 
         String username = request.getParameter("username");
         String psswrd = request.getParameter("password");

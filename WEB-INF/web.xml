@@ -12,6 +12,18 @@
      <servlet-name>Upload2Servlet</servlet-name>
      <servlet-class>pkg2.UploadServlet</servlet-class>
   </servlet>
+  <servlet>
+     <servlet-name>SignUp</servlet-name>
+     <servlet-class>pkg2.SignUp</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>SubmitTarefaServlet</servlet-name>
+     <servlet-class>pkg2.SalvarTarefaServlet</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>SubmitReuniaoServlet</servlet-name>
+     <servlet-class>pkg2.SalvarReuniaoServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -23,6 +35,22 @@
   <servlet-mapping>
      <servlet-name>Upload2Servlet</servlet-name>
      <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+     <servlet-name>SignUp</servlet-name>
+     <url-pattern>/cadastro</url-pattern>
+  </servlet-mapping>
+
+    <servlet-mapping>
+       <servlet-name>SubmitTarefaServlet</servlet-name>
+       <url-pattern>/submitTarefa</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+      <servlet-name>SubmitReuniaoServlet</servlet-name>
+      <url-pattern>/adicionarReunioes</url-pattern>
   </servlet-mapping>
 
 

@@ -39,6 +39,15 @@ public class MysqlConnect {
         return output;
     }
 
+    public void sqlInsertCadastro(String querry, String username, String password, String funcao, String nome) throws SQLException{
+        PreparedStatement preparedStmt2 = conn.prepareStatement(querry);
+        preparedStmt2.setString(1, nome);
+        preparedStmt2.setString(2, funcao);
+        preparedStmt2.setString(3, username);
+        preparedStmt2.setString(4, password);
+        preparedStmt2.executeUpdate();
+    }
+
     public void sqlUpdate(String querry) throws SQLException{
         PreparedStatement preparedStmt = conn.prepareStatement(querry);
         preparedStmt.executeUpdate();

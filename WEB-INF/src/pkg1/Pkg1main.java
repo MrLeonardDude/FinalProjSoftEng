@@ -110,7 +110,7 @@ public class Pkg1main extends HttpServlet{
             htmlBuild = sist.getHtmlBuild();
             htmlTarBuild = sist.getHtmlTarefasBuilder();
             session = request.getSession();
-            session.setMaxInactiveInterval(5);
+            session.setMaxInactiveInterval(60);
             session.setAttribute("username", username);
             urlString = "http://localhost:8080/orkut/orkut_"+Name+".html";
             session.setAttribute("urlMain", "/opt/tomcat/webapps/orkut/orkut_"+Name+".html");

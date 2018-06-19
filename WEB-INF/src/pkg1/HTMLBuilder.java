@@ -12,7 +12,7 @@ public class HTMLBuilder {
                     "<html>\n" +
                     "\n" +
                     "<head>\n" +
-                    "  <meta http-equiv=\"refresh\" content=\"30\" />" +
+                    "  <meta http-equiv=\"refresh\" content=\"60\" />" +
                     "<meta charset=\"utf-8\">\n" +
                     "  <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\" type=\"text/css\">\n" +

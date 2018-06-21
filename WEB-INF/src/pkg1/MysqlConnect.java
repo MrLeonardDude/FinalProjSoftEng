@@ -47,7 +47,10 @@ public class MysqlConnect {
         preparedStmt2.setString(4, password);
         preparedStmt2.executeUpdate();
     }
-
+    public void sqlInsertTarefa(String querry) throws SQLException{
+        Statement stmt = conn.createStatement();
+        stmt.executeUpdate(querry);
+    }
     public void sqlUpdate(String querry) throws SQLException{
         PreparedStatement preparedStmt = conn.prepareStatement(querry);
         preparedStmt.executeUpdate();

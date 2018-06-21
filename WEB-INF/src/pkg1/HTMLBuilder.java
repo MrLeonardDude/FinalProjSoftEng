@@ -12,7 +12,7 @@ public class HTMLBuilder {
                     "<html>\n" +
                     "\n" +
                     "<head>\n" +
-                    "  <meta http-equiv=\"refresh\" content=\"60\" />" +
+                    //"  <meta http-equiv=\"refresh\" content=\"120\" />" +
                     "<meta charset=\"utf-8\">\n" +
                     "  <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\" type=\"text/css\">\n" +
@@ -42,9 +42,9 @@ public class HTMLBuilder {
 
                     out.println(
                     "          <li class=\"nav-item dropdown\" >\n" +
-                    "            <a class=\"nav-link dropdown-toggle\" href=\"reunioes.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Reuniões </a>\n" +
+                    "            <a class=\"nav-link dropdown-toggle\" href=\"reunioes_"+Name + ".html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Reuniões </a>\n" +
                     "            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +
-                    "              <a class=\"dropdown-item\" href=\"reunioes.html\" target=\"conteudo\">Listar Reuniões</a>\n" +
+                    "              <a class=\"dropdown-item\" href=\"reunioes_"+ Name+ ".html\" target=\"conteudo\">Listar Reuniões</a>\n" +
                     "              <a class=\"dropdown-item\" href=\"criar_reuniao.html\" target=\"conteudo\">Criar Reunião</a>\n" +
                     "            </div>\n" +
                     "          </li>\n" +
@@ -57,7 +57,9 @@ public class HTMLBuilder {
                     "        </ul>\n" +
                     "      </div>\n" +
                     "    </div>\n" +
-                    "  </nav>\n" +
+                    " <form action=\"logout\" method=\"get\">\n" +
+                    "        <button type=\"submit\" class=\"btn btn-secondary\">Logout</button>\n" +
+                    "    </form></nav>\n" +
                     "  <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n" +
                     "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\n" +
                     "  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\n" +

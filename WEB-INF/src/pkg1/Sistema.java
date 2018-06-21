@@ -9,6 +9,7 @@ public class Sistema {
 	private static SistemaReuniao sistReuniao;
 	private static MysqlConnect mysql;
 	private static HTMLBuilder htmlBuild;
+	private static HTMLBuilderReuniao htmlBuildReuniao;
 	private static Membro usr;
 	private static HTMLTarefasBuilder tarBUild;
 
@@ -19,6 +20,7 @@ public class Sistema {
 		mysql = new MysqlConnect();
 		htmlBuild = new HTMLBuilder();
         tarBUild = new HTMLTarefasBuilder();
+        htmlBuildReuniao = new HTMLBuilderReuniao();
 	}
 
 	public static synchronized  Sistema getInstance() throws SQLException, ClassNotFoundException{
@@ -78,7 +80,12 @@ public class Sistema {
         return tarBUild;
     }
 
-    public static void setHtmlTarefasBuilder(HTMLTarefasBuilder htmlBuild) {
+	public static HTMLBuilderReuniao getHtmlReuniaoBuilder() {
+		return htmlBuildReuniao;
+	}
+
+
+	public static void setHtmlTarefasBuilder(HTMLTarefasBuilder htmlBuild) {
         Sistema.tarBUild = htmlBuild;
     }
 

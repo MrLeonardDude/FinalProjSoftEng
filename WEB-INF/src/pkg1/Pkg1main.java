@@ -17,6 +17,7 @@ public class Pkg1main extends HttpServlet{
     private Sistema sist;
     private MysqlConnect mysql;
     private HTMLTarefasBuilder htmlTarBuild;
+    private HTMLBuilderReuniao htmlReubuild;
     private String Name =null;
 
     private void loadTarefas()throws SQLException {
@@ -109,22 +110,28 @@ public class Pkg1main extends HttpServlet{
         if(this.connectBD(username, psswrd)) {
             htmlBuild = sist.getHtmlBuild();
             htmlTarBuild = sist.getHtmlTarefasBuilder();
+            htmlReubuild = sist.getHtmlReuniaoBuilder();
             session = request.getSession();
-            session.setMaxInactiveInterval(60);
+            session.setMaxInactiveInterval(5*60);
             session.setAttribute("username", username);
+            session.setAttribute("name", Name);
             urlString = "http://localhost:8080/orkut/orkut_"+Name+".html";
             session.setAttribute("urlMain", "/opt/tomcat/webapps/orkut/orkut_"+Name+".html");
             session.setAttribute("Tarefas", "/opt/tomcat/webapps/orkut/tarefas_"+Name+".html");
+            session.setAttribute("main", urlString);
             ArrayList<Tarefa> tar = sist.getSistTarefa().getTarefas();
             ArrayList<Membro> off =sist.getSistComunicacao().getMembrosOffline();
             ArrayList<Membro> on =sist.getSistComunicacao().getMembrosOnline();
             ArrayList<Tarefa> pend = sist.getSistTarefa().getTarefasPendents();
+            ArrayList<Reuniao> reun = sist.getSistReuniao().getReunioes();
             htmlBuild.makeHome(on, off, pend, Name);
             htmlTarBuild.makeHome(tar, Name);
+            htmlReubuild.makeHome(reun, Name);
             sist.getSistComunicacao().setMembrosOffline(new ArrayList<Membro>());
             sist.getSistComunicacao().setMembrosOnline(new ArrayList<Membro>());
             sist.getSistTarefa().setTarefasPendente(new ArrayList<Tarefa>());
             sist.getSistTarefa().setTarefas(new ArrayList<Tarefa>());
+            sist.getSistReuniao().setReunioes(new ArrayList<Reuniao>());
         }
         response.sendRedirect(response.encodeRedirectURL(urlString));
 

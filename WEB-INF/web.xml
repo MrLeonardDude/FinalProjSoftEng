@@ -24,6 +24,10 @@
      <servlet-name>SubmitReuniaoServlet</servlet-name>
      <servlet-class>pkg2.SalvarReuniaoServlet</servlet-class>
   </servlet>
+  <servlet>
+     <servlet-name>LogoutServlet</servlet-name>
+     <servlet-class>pkg2.LogoutServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -52,6 +56,11 @@
       <servlet-name>SubmitReuniaoServlet</servlet-name>
       <url-pattern>/adicionarReunioes</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>LogoutServlet</servlet-name>
+     <url-pattern>/logout</url-pattern>
+ </servlet-mapping>
 
 
   <listener>

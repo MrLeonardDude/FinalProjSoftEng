@@ -67,4 +67,8 @@
         <listener-class>pkg1.SessionManager</listener-class>
  </listener>
 
+ <listener>
+        <listener-class>SchedulerServlets.SchedulerServlet</listener-class>
+ </listener>
+ <display-name>Website do Orkut!</display-name>
 </web-app>

@@ -118,6 +118,7 @@ public class Pkg1main extends HttpServlet{
             urlString = "http://localhost:8080/orkut/orkut_"+Name+".html";
             session.setAttribute("urlMain", "/opt/tomcat/webapps/orkut/orkut_"+Name+".html");
             session.setAttribute("Tarefas", "/opt/tomcat/webapps/orkut/tarefas_"+Name+".html");
+            session.setAttribute("Reuniao" , "/opt/tomcat/webapps/orkut/reunioes_"+Name+".html");
             session.setAttribute("main", urlString);
             ArrayList<Tarefa> tar = sist.getSistTarefa().getTarefas();
             ArrayList<Membro> off =sist.getSistComunicacao().getMembrosOffline();

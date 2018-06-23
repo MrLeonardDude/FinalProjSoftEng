@@ -28,7 +28,10 @@
      <servlet-name>LogoutServlet</servlet-name>
      <servlet-class>pkg2.LogoutServlet</servlet-class>
   </servlet>
-
+  <servlet>
+     <servlet-name>ExcluirTarefas</servlet-name>
+     <servlet-class>TaskMng.DeleteTask</servlet-class>
+  </servlet>
 
   <servlet-mapping>
      <servlet-name>LoginServlet</servlet-name>
@@ -61,6 +64,11 @@
      <servlet-name>LogoutServlet</servlet-name>
      <url-pattern>/logout</url-pattern>
  </servlet-mapping>
+
+ <servlet-mapping>
+    <servlet-name>ExcluirTarefas</servlet-name>
+    <url-pattern>/delete</url-pattern>
+</servlet-mapping>
 
 
   <listener>

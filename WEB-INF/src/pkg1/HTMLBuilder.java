@@ -49,7 +49,7 @@ public class HTMLBuilder {
                     "            </div>\n" +
                     "          </li>\n" +
                     "          <li class=\"nav-item\">\n" +
-                    "            <a class=\"nav-link disabled\" target=\"conteudo\">Agenda</a>\n" +
+                    "            <a class=\"nav-link\" href=\"agenda.html\" target=\"conteudo\">Agenda</a>\n" +
                     "          </li>\n" +
                     "          <li class=\"nav-item\">\n" +
                     "            <a class=\"nav-link disabled\" target=\"conteudo\">Discussões</a>\n" +

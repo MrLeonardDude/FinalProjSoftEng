@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62da17dd-0eaa-486f-b259-049b9698df51" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/DeploymentServlet/ConfigServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/src/DeploymentServlet/ConfigServlet.java" afterDir="false" />
+    <list default="true" id="62da17dd-0eaa-486f-b259-049b9698df51" name="Default" comment="Commit Session getURL">
+      <change afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/ArrayIntString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SchedulerServlets/SchedulerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SchedulerServlets/SchedulerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SchedulerServlets/UserSpaceRebuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SchedulerServlets/UserSpaceRebuild.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/SchedulerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/SchedulerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/HTMLBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/HTMLBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/MysqlConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/MysqlConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Pkg1main.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Pkg1main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/SessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/SessionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adicionar_tarefa.html" beforeDir="false" afterPath="$PROJECT_DIR$/adicionar_tarefa.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/criar_reuniao.html" beforeDir="false" afterPath="$PROJECT_DIR$/criar_reuniao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orkut_Leonardo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reunioes_Joao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reunioes_Juliana.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reunioes_Leonardo.html" beforeDir="false" afterPath="$PROJECT_DIR$/reunioes_Leonardo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reunioes_artur lixo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reunioes_luisa.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarefas_Leonardo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editar_tarefa.html" beforeDir="false" afterPath="$PROJECT_DIR$/editar_tarefa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orkut.html" beforeDir="false" afterPath="$PROJECT_DIR$/orkut.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orkut_Leonardo.html" beforeDir="false" afterPath="$PROJECT_DIR$/orkut_Leonardo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarefas_Leonardo.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarefas_Leonardo.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +29,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserSpaceRebuild.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java">
+      <file leaf-file-name="Pkg1main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlConnect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteTask.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/TaskMng/DeleteTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,35 +59,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SchedulerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/SchedulerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="115" selection-start-line="18" selection-start-column="115" selection-end-line="18" selection-end-column="115" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/DeploymentServlet/ConfigServlet.java">
+      <file leaf-file-name="Tarefa.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret lean-forward="true" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalvarTarefaServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarTarefaServlet.java">
+      <file leaf-file-name="HTMLTarefasBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="472">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTMLBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +93,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MysqlConnect.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
+      <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/LogoutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="42" />
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -100,8 +126,6 @@
       <find>TArefa</find>
       <find>riar</find>
       <find>update</find>
-      <find>Tarefas</find>
-      <find>tarefas</find>
       <find>session</find>
       <find>SistReuni</find>
       <find>nav</find>
@@ -112,6 +136,13 @@
       <find>request</find>
       <find>reuniao</find>
       <find>href</find>
+      <find>tarefas</find>
+      <find>Part</find>
+      <find>agen</find>
+      <find>Edit</find>
+      <find>Tarefas</find>
+      <find>int</find>
+      <find>ID</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,25 +172,29 @@
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/FileManagers.java" />
         <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/SignUp.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarTarefaServlet.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/SqlTst.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarReuniaoServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/DeploymentServlet/ConfigServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/SchedulerServlet.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/ArrayIntString.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/TaskMng/DeleteTask.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -196,7 +231,7 @@
               <item name="orkut" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg1" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskMng" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,24 +403,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -439,9 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1690">
           <caret line="65" column="141" lean-forward="true" selection-start-line="65" selection-start-column="141" selection-end-line="65" selection-end-column="141" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,9 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,9 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -497,9 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -514,9 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,23 +572,6 @@
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SistemaComunicacao.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SistemaTarefa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/FileManagers.java" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/FileMan.java" />
     <entry file="file://$PROJECT_DIR$/inicio.html">
@@ -606,27 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
@@ -638,33 +606,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/DeploymentServlet.java" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="44" column="104" selection-start-line="44" selection-start-column="104" selection-end-line="44" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="36" column="128" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SqlTst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -672,30 +617,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarTarefaServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,18 +646,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/ArrayIntString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SistemaTarefa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="338">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/TaskMng/DeleteTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

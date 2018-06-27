@@ -16,7 +16,7 @@ public class SchedulerServlet implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent event){
         scheduler = Executors.newSingleThreadScheduledExecutor();
-        scheduler.scheduleAtFixedRate(new UserSpaceRebuild(event.getServletContext()) , 0, 1, TimeUnit.MILLISECONDS);
+        scheduler.scheduleAtFixedRate(new UserSpaceRebuild(event.getServletContext()) , 0, 1, TimeUnit.SECONDS);
     }
 
     @Override

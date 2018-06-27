@@ -71,7 +71,6 @@ public class Pkg1main extends HttpServlet{
                 Reuniao r = new Reuniao(Integer.valueOf(str.get(i)),str.get(i+1),str.get(i+2),str.get(i+3));
                 sist.getSistReuniao().addReuniao(r);
             }
-
         }
     }
 
@@ -93,7 +92,7 @@ public class Pkg1main extends HttpServlet{
                 mysql.sqlUpdate(querry2);
             }
         }catch(Exception e){
-            flag = Boolean.FALSE;
+            e.printStackTrace();
         }
         return flag;
     }

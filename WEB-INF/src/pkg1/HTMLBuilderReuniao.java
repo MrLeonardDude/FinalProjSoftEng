@@ -30,8 +30,8 @@ public class HTMLBuilderReuniao {
 
                        out.println(
                                "            <li class=\"nav-item w3-teal\" style=\"border-left: 4px solid #fff; border-bottom: 1px solid #fff\">\n" +
-                                       "              <button onclick=\"myFunction('reuniao1')\" class=\"w3-button w3-block w3-left-align w3-text-black\"> Reuniao #" + reuniao.get(i).getID() + " - Local :"+reuniao.get(i).getLocal()+" -  Data :" + reuniao.get(i).getData()+ "</button>\n" +
-                                       "              <div id=\"reuniao"+ reuniao.get(i).getID()+ "\" class=\"w3-container w3-hide w3-blue-grey\">\n" +
+                                       "              <button onclick=\"myFunction('"+ reuniao.get(i).getID()+ "')\" class=\"w3-button w3-block w3-left-align w3-text-black\"> Reuniao #" + reuniao.get(i).getID() + " - Local :"+reuniao.get(i).getLocal()+" -  Data :" + reuniao.get(i).getData()+ "</button>\n" +
+                                       "              <div id=\""+ reuniao.get(i).getID()+ "\" class=\"w3-container w3-hide w3-blue-grey\">\n" +
                                        "                <h4>Data : "+reuniao.get(i).getData() + " e Local : "+ reuniao.get(i).getLocal()+"</h4>\n" +
                                        "                <p>" + reuniao.get(i).getPauta()+ "</p>\n" +
                                        "                              <a class=\"btn btn-primary\"onclick=\"window.location.href = 'r1.html';\" class=\"w3-button w3-left w3-text-white w3-teal\" href=\"reuniao_13.html\" style=\"border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff\">\n" +

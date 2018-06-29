@@ -8,7 +8,30 @@
      <servlet-name>LoginServlet</servlet-name>
      <servlet-class>pkg1.Pkg1main</servlet-class>
   </servlet>
-
+  <servlet>
+     <servlet-name>Upload2Servlet</servlet-name>
+     <servlet-class>pkg2.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>SignUp</servlet-name>
+     <servlet-class>pkg2.SignUp</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>SubmitTarefaServlet</servlet-name>
+     <servlet-class>pkg2.SalvarTarefaServlet</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>SubmitReuniaoServlet</servlet-name>
+     <servlet-class>pkg2.SalvarReuniaoServlet</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>LogoutServlet</servlet-name>
+     <servlet-class>pkg2.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>ExcluirTarefas</servlet-name>
+     <servlet-class>TaskMng.DeleteTask</servlet-class>
+  </servlet>
 
   <servlet-mapping>
      <servlet-name>LoginServlet</servlet-name>
@@ -16,4 +39,44 @@
   </servlet-mapping>
 
 
+  <servlet-mapping>
+     <servlet-name>Upload2Servlet</servlet-name>
+     <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+     <servlet-name>SignUp</servlet-name>
+     <url-pattern>/cadastro</url-pattern>
+  </servlet-mapping>
+
+    <servlet-mapping>
+       <servlet-name>SubmitTarefaServlet</servlet-name>
+       <url-pattern>/submitTarefa</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+      <servlet-name>SubmitReuniaoServlet</servlet-name>
+      <url-pattern>/adicionarReunioes</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>LogoutServlet</servlet-name>
+     <url-pattern>/logout</url-pattern>
+ </servlet-mapping>
+
+ <servlet-mapping>
+    <servlet-name>ExcluirTarefas</servlet-name>
+    <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+
+  <listener>
+        <listener-class>pkg1.SessionManager</listener-class>
+ </listener>
+
+ <listener>
+        <listener-class>SchedulerServlets.SchedulerServlet</listener-class>
+ </listener>
+ <display-name>Website do Orkut!</display-name>
 </web-app>

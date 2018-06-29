@@ -12,7 +12,7 @@
   <div class="py-0">
     <h1 class="">Nova reunião</h1>
     <div class="col-md-12">
-      <form class="bg-primary border py-1" action="reunioes.html" method="post">
+      <form class="bg-primary border py-1" action="adicionarReunioes" method="post">
         <div class="form-group form-row">
           <label class="col-form-label col-sm-2">Local:</label>
           <div class="col-sm-10">
@@ -21,24 +21,17 @@
         <div class="form-group form-row">
           <label class="col-sm-2 col-form-label">Data:</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inlineFormInput" name="nome_projeto" placeholder="Insira data"> </div>
+            <input type="text" class="form-control" id="inlineFormInput" name="data_tarefa" placeholder="Insira data"> </div>
         </div>
         <div class="form-group form-row">
-          <label class="col-sm-2 col-form-label">Hora:</label>
+          <label class="col-sm-2 col-form-label">Descricao:</label>
           <div class="col-sm-10">
             <div class="input-group">
-              <input type="text" class="form-control" id="inlineFormInputGroup" name="descricao" placeholder="Inisira hora"> </div>
+              <input type="text" class="form-control" id="inlineFormInputGroup" name="descricao" placeholder="Descricao"> </div>
           </div>
         </div>
-        <div class="form-group form-row">
-          <label class="col-sm-2 col-form-label">Membros:</label>
-          <div class="col-sm-10">
-            <div class="input-group">
-              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" name="membros"> </div>
-          </div>
-        </div>
-        <input type="submit" class="btn btn-secondary" value="Salvar" href="reunioes.html">
-        <a class="btn btn-danger" href="reunioes.html" target="conteudo">Cancelar </a>
+        <input type="submit" class="btn btn-secondary" value="Salvar">
+        <a class="btn btn-danger" href="javascript:history.back()" target="conteudo">Cancelar </a>
       </form>
     </div>
   </div>

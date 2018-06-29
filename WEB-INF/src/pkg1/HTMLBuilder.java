@@ -5,14 +5,15 @@ import java.util.ArrayList;
 
 public class HTMLBuilder {
 
-    public void makeHome(ArrayList<Membro> user, ArrayList<Membro> userOff, ArrayList<Tarefa> pendente){
+    public void makeHome(ArrayList<Membro> user, ArrayList<Membro> userOff, ArrayList<Tarefa> pendente, String Name){
 
-        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/orkut.html")){
+        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/orkut_"+ Name+ ".html")){
             out.println("<!DOCTYPE html>\n" +
                     "<html>\n" +
                     "\n" +
                     "<head>\n" +
-                    "  <meta charset=\"utf-8\">\n" +
+                    //"  <meta http-equiv=\"refresh\" content=\"120\" />" +
+                    "<meta charset=\"utf-8\">\n" +
                     "  <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\" type=\"text/css\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://v40.pingendo.com/assets/4.0.0/default/theme.css\" type=\"text/css\"> </head>\n" +
@@ -31,24 +32,24 @@ public class HTMLBuilder {
                     "          </li>\n");
 
                     out.println("<li class=\"nav-item dropdown\" >" +
-                                "<a class=\"nav-link dropdown-toggle\" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Tarefas </a>"+
+                                "<a class=\"nav-link dropdown-toggle\" href=\"tarefas_"+Name+".html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Tarefas </a>"+
                                 "<div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">"+
-                                  "<a class=\"dropdown-item\" href=\"tarefas.html\" target=\"conteudo\">Listar Tarefas</a>"+
+                                  "<a class=\"dropdown-item\" href=\"tarefas_"+Name+".html\" target=\"conteudo\">Listar Tarefas</a>"+
                                   "<a class=\"dropdown-item\" href=\"adicionar_tarefa.html\" target=\"conteudo\">Adicionar Tarefa</a>"+
                                 "</div>"+
                               "</li>");
 
 
-                    out.println("          </li>\n" +
+                    out.println(
                     "          <li class=\"nav-item dropdown\" >\n" +
-                    "            <a class=\"nav-link dropdown-toggle\" href=\"reunioes.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Reuniões </a>\n" +
+                    "            <a class=\"nav-link dropdown-toggle\" href=\"reunioes_"+Name + ".html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Reuniões </a>\n" +
                     "            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +
-                    "              <a class=\"dropdown-item\" href=\"reunioes.html\" target=\"conteudo\">Listar Reuniões</a>\n" +
+                    "              <a class=\"dropdown-item\" href=\"reunioes_"+ Name+ ".html\" target=\"conteudo\">Listar Reuniões</a>\n" +
                     "              <a class=\"dropdown-item\" href=\"criar_reuniao.html\" target=\"conteudo\">Criar Reunião</a>\n" +
                     "            </div>\n" +
                     "          </li>\n" +
                     "          <li class=\"nav-item\">\n" +
-                    "            <a class=\"nav-link disabled\" target=\"conteudo\">Agenda</a>\n" +
+                    "            <a class=\"nav-link\" href=\"agenda.html\" target=\"conteudo\">Agenda</a>\n" +
                     "          </li>\n" +
                     "          <li class=\"nav-item\">\n" +
                     "            <a class=\"nav-link disabled\" target=\"conteudo\">Discussões</a>\n" +
@@ -56,7 +57,9 @@ public class HTMLBuilder {
                     "        </ul>\n" +
                     "      </div>\n" +
                     "    </div>\n" +
-                    "  </nav>\n" +
+                    " <form action=\"logout\" method=\"get\">\n" +
+                    "        <button type=\"submit\" class=\"btn btn-secondary\">Logout</button>\n" +
+                    "    </form></nav>\n" +
                     "  <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n" +
                     "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\n" +
                     "  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\n" +
@@ -72,7 +75,8 @@ public class HTMLBuilder {
                     "          <div class=\"col-md-12\">\n" +
                     "            <ul class=\"\">\n");
                 for(int i =0; i < user.size(); i++) {
-                    out.println("<li><a href=\"contato.html\" target=\"conteudo\">"+user.get(i).getNome()+"</a></li>\n");
+                    String cont_url = (Name.compareTo(user.get(i).getNome()) > 0) ? (Name +"_" +user.get(i).getNome()) : (user.get(i).getNome()+"_" +Name );
+                    out.println("<li><a href=\"contatos_"+ cont_url + ".html\" target=\"conteudo\">"+user.get(i).getNome()+"</a></li>\n");
                 }
                 out.println("</ul>\n</div>\n</div>\n");
                 out.println("        <div class=\"row\">\n" +

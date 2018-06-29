@@ -4,9 +4,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class HTMLTarefasBuilder {
-    public void makeHome(ArrayList<Tarefa> pendente){
+    public void makeHome(ArrayList<Tarefa> pendente, String Name, ArrayList<String> files){
 
-        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/tarefas.html")){
+        try(PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/tarefas_"+ Name + ".html")) {
             out.println("<!DOCTYPE html>\n" +
                     "<html>\n" +
                     "\n" +
@@ -26,21 +26,45 @@ public class HTMLTarefasBuilder {
                     "          <div class=\"row\">\n" +
                     "            <h1>Tarefas</h1>\n" +
                     "          </div>\n");
-            for(int i =0; i < pendente.size(); i++) {
+            for (int i = 0; i < pendente.size(); i++) {
                 out.println(
                         "<li class=\"nav-item dropdown\">\n" +
-                                "            <a class=\"nav-link text-dark nav-item bg-primary w3-border-dark-grey dropdown-toggle \" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"
+                                "<a class=\"nav-link text-dark nav-item bg-primary w3-border-dark-grey dropdown-toggle \" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"
                 );
                 out.println(pendente.get(i).getDefinicao());
                 out.println("</a>\n" +
                         "            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +
                         "              <a class=\"dropdown-item\" href=\"historico_tarefa.html\" target=\"conteudo\">Histórico</a>\n" +
                         "              <a class=\"dropdown-item\" href=\"editar_tarefa.html\">Editar Tarefa</a>\n" +
-                        "              <a class=\"dropdown-item\" href=\"tarefas.html\">Excluir Tarefa</a>\n" +
+                        "              <form action=\"delete\" method=\"get\">\n" +
+                        "                   <input type=\"hidden\" name=\"ID\" value=\"" + pendente.get(i).getID() + "\">\n" +
+                        "                   <button type=\"submit\" class=\"dropdown-item\" value=\"Submit\">Excluir Tarefa</button>\n" +
+                        "               </form>\n" +
                         "              <a class=\"dropdown-item\" href=\"tarefas.html\">Concluir Tarefa</a>\n" +
                         "            </div>");
             }
-            out.println("</ul>\n" +
+            out.println(
+                    "           <div class=\"row\">\n" +
+                            "              <h1>Arquivos</h1>\n" +
+                            "                 <form action=\"upload\" method=\"post\" enctype=\"multipart/form-data\">" +
+                            "           <input type=\"hidden\" name=\"MAX_FILE_SIZE\" value=\"4194304\" />\n" +
+                            "           Compartilhar arquivo:\n" +
+                            "            <input type=\"file\" name=\"file\"/>\n" +
+                            "          <input type=\"submit\" value=\"Upload\" class=\"btn btn-primary\">\n" +
+                            "          <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Limpar</button>\n" +
+                            "        </form>               "
+
+            );
+            for(int i = 0; i < files.size(); i++){
+                out.println(
+                        "               <li class=\"nav-item dropdown\">\n" +
+                                "                   <a class=\"nav-link text-dark nav-item bg-primary w3-border-dark-grey dropdown-toggle \" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">" + files.get(i) +
+                                "                    </a>"
+                );
+            }
+            out.println(   "              " +
+                    "            </div>" +
+                    "         </ul>\n" +
                     "      </div>\n" +
                     "    </div>\n" +
                     "  </div>\n" +

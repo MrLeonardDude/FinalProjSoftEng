@@ -22,6 +22,7 @@ public class Pkg1main extends HttpServlet{
     private HTMLBuilderReuniao htmlReubuild;
     private CreateChatServlet chatBuild;
     private String Name =null;
+    private ArrayList<String> fileArray;
 
     private void loadTarefas()throws SQLException {
         String querry = "Select ID, definicao, descricao, progressoTotal, estado  from tarefas";
@@ -77,6 +78,14 @@ public class Pkg1main extends HttpServlet{
         }
     }
 
+    private ArrayList<String> loadFiles() throws SQLException{
+        ArrayList<String> files;
+        String querry = "Select title from files";
+        files = mysql.sqlSelect(querry, 1);
+        return files;
+    }
+
+
     private Boolean connectBD(String username, String password){
         Boolean flag = Boolean.FALSE;
         try{
@@ -90,6 +99,7 @@ public class Pkg1main extends HttpServlet{
                 sist.setMembro(usr);
                 this.loadReunioes();
                 this.loadTarefas();
+                fileArray = loadFiles();
                 String querry2 = "UPDATE membros SET status=1 where username='"+ username+ "'";
                 mysql.sqlUpdate(querry2);
                 this.loadMembros();
@@ -137,7 +147,7 @@ public class Pkg1main extends HttpServlet{
                 }
             }
             htmlBuild.makeHome(on, off, pend, Name);
-            htmlTarBuild.makeHome(tar, Name);
+            htmlTarBuild.makeHome(tar, Name, fileArray);
             htmlReubuild.makeHome(reun, Name);
             sist.getSistComunicacao().setMembrosOffline(new ArrayList<Membro>());
             sist.getSistComunicacao().setMembrosOnline(new ArrayList<Membro>());

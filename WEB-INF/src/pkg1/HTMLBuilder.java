@@ -75,7 +75,8 @@ public class HTMLBuilder {
                     "          <div class=\"col-md-12\">\n" +
                     "            <ul class=\"\">\n");
                 for(int i =0; i < user.size(); i++) {
-                    out.println("<li><a href=\"contato.html\" target=\"conteudo\">"+user.get(i).getNome()+"</a></li>\n");
+                    String cont_url = (Name.compareTo(user.get(i).getNome()) > 0) ? (Name +"_" +user.get(i).getNome()) : (user.get(i).getNome()+"_" +Name );
+                    out.println("<li><a href=\"contatos_"+ cont_url + ".html\" target=\"conteudo\">"+user.get(i).getNome()+"</a></li>\n");
                 }
                 out.println("</ul>\n</div>\n</div>\n");
                 out.println("        <div class=\"row\">\n" +

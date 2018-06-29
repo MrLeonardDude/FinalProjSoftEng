@@ -1,5 +1,7 @@
 package pkg1;
 
+import ChatServlet.CreateChatServlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +20,7 @@ public class Pkg1main extends HttpServlet{
     private MysqlConnect mysql;
     private HTMLTarefasBuilder htmlTarBuild;
     private HTMLBuilderReuniao htmlReubuild;
+    private CreateChatServlet chatBuild;
     private String Name =null;
 
     private void loadTarefas()throws SQLException {
@@ -110,6 +113,7 @@ public class Pkg1main extends HttpServlet{
             htmlBuild = sist.getHtmlBuild();
             htmlTarBuild = sist.getHtmlTarefasBuilder();
             htmlReubuild = sist.getHtmlReuniaoBuilder();
+            chatBuild = sist.getChatBuilder();
             session = request.getSession();
             session.setMaxInactiveInterval(5*60);
             session.setAttribute("username", username);
@@ -124,6 +128,14 @@ public class Pkg1main extends HttpServlet{
             ArrayList<Membro> on =sist.getSistComunicacao().getMembrosOnline();
             ArrayList<Tarefa> pend = sist.getSistTarefa().getTarefasPendents();
             ArrayList<Reuniao> reun = sist.getSistReuniao().getReunioes();
+            for ( int i = 0; i < on.size(); i++){
+                if(Name.compareTo(on.get(i).getNome()) > 0){
+                    chatBuild.makeHome(Name, on.get(i).getNome());
+                }
+                else{
+                    chatBuild.makeHome(on.get(i).getNome(), Name);
+                }
+            }
             htmlBuild.makeHome(on, off, pend, Name);
             htmlTarBuild.makeHome(tar, Name);
             htmlReubuild.makeHome(reun, Name);

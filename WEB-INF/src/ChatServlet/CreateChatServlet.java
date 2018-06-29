@@ -1,14 +1,11 @@
 package ChatServlet;
 
-import pkg1.Reuniao;
-
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 public class CreateChatServlet {
 
-    public void makeHome(ArrayList<Reuniao> reuniao, String ID1, String ID2, String Name) {
-        try (PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/contatos_" + ID1+ "_" + ID2 +  ".html")) {
+    public void makeHome(String Name, String Name1) {
+        try (PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/contatos_" + Name+ "_" + Name1 +  ".html")) {
             out.println("<!DOCTYPE html>\n" +
                     "<!--O que falta: Atualizar com o background, fazer ele abrir em um lugar menor, diminuir ele -->\n" +
                     "<html>\n" +
@@ -77,21 +74,21 @@ public class CreateChatServlet {
                     "    <input class=\"message-form__input\" placeholder=\"Type a message..\" type=\"text\"/>\n" +
                     "    <input class=\"message-form__button\" value=\"Send\" type=\"submit\"/>\n" +
                     "  </form>\n" +
-                    "  <script src=\"./script_" + ID1 + "_"+ ID2 + ".js\"></script>\n" +
+                    "  <script src=\"./script_" + Name + "_"+ Name1+ ".js\"></script>\n" +
                     "</body>\n" +
                     "</html>\n");
         }
         catch(Exception e){
             e.printStackTrace();
         }
-        try (PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/script_" + ID1 + "_"+ ID2 + ".js")) {
+        try (PrintWriter out = new PrintWriter("/opt/tomcat/webapps/orkut/script_" + Name + "_"+ Name1+ ".js")) {
             out.println("// PS! Replace this with your own channel ID\n" +
                     "// If you use this channel ID your app will stop working in the future\n" +
-                    "const CLIENT_ID = '"+ ID1 + ID2 + "t4rFLNDDotC';\n" +
+                    "const CLIENT_ID = '4fNk4t4rFLNDDotC';\n" +
                     "\n" +
                     "const drone = new ScaleDrone(CLIENT_ID, {\n" +
-                    "  data: { " +
-                    "    name: " + Name + ",\n" +
+                    "  data: {\n" +
+                    "    name: getRandomName(),\n" +
                     "    color: 0xFFFFFF,\n" +
                     "  },\n" +
                     "});\n" +
@@ -145,11 +142,19 @@ public class CreateChatServlet {
                     "  console.error(error);\n" +
                     "});\n" +
                     "\n" +
+                    "function getRandomName() {\n" +
+                    "  const adjs = [\"autumn\", \"hidden\", \"bitter\", \"misty\", \"silent\", \"empty\", \"dry\", \"dark\", \"summer\", \"icy\", \"delicate\", \"quiet\", \"white\", \"cool\", \"spring\", \"winter\", \"patient\", \"twilight\", \"dawn\", \"crimson\", \"wispy\", \"weathered\", \"blue\", \"billowing\", \"broken\", \"cold\", \"damp\", \"falling\", \"frosty\", \"green\", \"long\", \"late\", \"lingering\", \"bold\", \"little\", \"morning\", \"muddy\", \"old\", \"red\", \"rough\", \"still\", \"small\", \"sparkling\", \"throbbing\", \"shy\", \"wandering\", \"withered\", \"wild\", \"black\", \"young\", \"holy\", \"solitary\", \"fragrant\", \"aged\", \"snowy\", \"proud\", \"floral\", \"restless\", \"divine\", \"polished\", \"ancient\", \"purple\", \"lively\", \"nameless\"];\n" +
+                    "  const nouns = [\"waterfall\", \"river\", \"breeze\", \"moon\", \"rain\", \"wind\", \"sea\", \"morning\", \"snow\", \"lake\", \"sunset\", \"pine\", \"shadow\", \"leaf\", \"dawn\", \"glitter\", \"forest\", \"hill\", \"cloud\", \"meadow\", \"sun\", \"glade\", \"bird\", \"brook\", \"butterfly\", \"bush\", \"dew\", \"dust\", \"field\", \"fire\", \"flower\", \"firefly\", \"feather\", \"grass\", \"haze\", \"mountain\", \"night\", \"pond\", \"darkness\", \"snowflake\", \"silence\", \"sound\", \"sky\", \"shape\", \"surf\", \"thunder\", \"violet\", \"water\", \"wildflower\", \"wave\", \"water\", \"resonance\", \"sun\", \"wood\", \"dream\", \"cherry\", \"tree\", \"fog\", \"frost\", \"voice\", \"paper\", \"frog\", \"smoke\", \"star\"];\n" +
+                    "  return (\n" +
+                    "    adjs[Math.floor(Math.random() * adjs.length)] +\n" +
+                    "    \" \" +\n" +
+                    "    nouns[Math.floor(Math.random() * nouns.length)]\n" +
+                    "  );\n" +
+                    "}\n" +
+                    "\n" +
                     "function getRandomColor() {\n" +
                     "  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);\n" +
                     "}\n" +
-                    "\n" +
-                    "//------------- DOM STUFF\n" +
                     "\n" +
                     "const DOM = {\n" +
                     "  membersCount: document.querySelector('.members-count'),\n" +
@@ -205,7 +210,8 @@ public class CreateChatServlet {
                     "  if (wasTop) {\n" +
                     "    el.scrollTop = el.scrollHeight - el.clientHeight;\n" +
                     "  }\n" +
-                    "}\n");
+                    "}\n"
+            );
         }
         catch(Exception e){
             e.printStackTrace();

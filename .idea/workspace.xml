@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="62da17dd-0eaa-486f-b259-049b9698df51" name="Default" comment="Commit Session getURL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SchedulerServlets/UserSpaceRebuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SchedulerServlets/UserSpaceRebuild.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/HTMLTarefasBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/HTMLTarefasBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ChatServlet/CreateChatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ChatServlet/CreateChatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/HTMLBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/HTMLBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Pkg1main.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Pkg1main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/pkg1/Sistema.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/TaskMng/DeleteTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/TaskMng/DeleteTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,47 +24,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateChatServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pkg1main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="method#loadTarefas#0;class#Pkg1main#0" />
+                <element signature="method#loadMembros#0;class#Pkg1main#0" />
+                <element signature="method#loadReunioes#0;class#Pkg1main#0" />
+                <element signature="method#connectBD#0;class#Pkg1main#0" />
+                <element signature="method#doPost#0;class#Pkg1main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateChatServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="189" column="30" lean-forward="true" selection-start-line="189" selection-start-column="30" selection-end-line="189" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="208">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSpaceRebuild.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java">
+      <file leaf-file-name="HTMLBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#loadMembros#0;class#UserSpaceRebuild#0" />
-                <element signature="method#loadReunioes#0;class#UserSpaceRebuild#0" />
-                <element signature="method#rebuildHome#0;class#UserSpaceRebuild#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HTMLTarefasBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MysqlConnect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            <state relative-caret-position="286">
+              <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -140,22 +129,23 @@
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarTarefaServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/SqlTst.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarReuniaoServlet.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/DeploymentServlet/ConfigServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/SessionManager.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg2/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/ArrayIntString.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Tarefa.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/SchedulerServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/TaskMng/DeleteTask.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java" />
       </list>
     </option>
   </component>
@@ -195,7 +185,7 @@
               <item name="orkut" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SchedulerServlets" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,20 +365,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/SqlTst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1898">
-          <caret line="74" column="55" lean-forward="true" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLTarefasBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1274">
@@ -546,13 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/SalvarReuniaoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -561,13 +530,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/DeploymentServlet.java" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg2/UploadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -579,13 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -659,44 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="method#loadMembros#0;class#Pkg1main#0" />
-            <element signature="method#loadReunioes#0;class#Pkg1main#0" />
-            <element signature="method#connectBD#0;class#Pkg1main#0" />
-            <element signature="method#doGet#0;class#Pkg1main#0" />
-            <element signature="method#doPost#0;class#Pkg1main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilderReuniao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
           <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#loadMembros#0;class#UserSpaceRebuild#0" />
-            <element signature="method#loadReunioes#0;class#UserSpaceRebuild#0" />
-            <element signature="method#rebuildHome#0;class#UserSpaceRebuild#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,12 +635,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java">
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/MysqlConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="189" column="30" lean-forward="true" selection-start-line="189" selection-start-column="30" selection-end-line="189" selection-end-column="30" />
+        <state relative-caret-position="82">
+          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Sistema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="91" column="56" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Membro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script_Leonardo_Juliana.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contatos_Leonardo_Juliana.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/SchedulerServlets/UserSpaceRebuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loadTarefas#0;class#UserSpaceRebuild#0" />
+            <element signature="method#loadMembros#0;class#UserSpaceRebuild#0" />
+            <element signature="method#loadReunioes#0;class#UserSpaceRebuild#0" />
+            <element signature="method#rebuildHome#0;class#UserSpaceRebuild#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/HTMLBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/ChatServlet/CreateChatServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/pkg1/Pkg1main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="method#loadTarefas#0;class#Pkg1main#0" />
+            <element signature="method#loadMembros#0;class#Pkg1main#0" />
+            <element signature="method#loadReunioes#0;class#Pkg1main#0" />
+            <element signature="method#connectBD#0;class#Pkg1main#0" />
+            <element signature="method#doPost#0;class#Pkg1main#0" />
           </folding>
         </state>
       </provider>

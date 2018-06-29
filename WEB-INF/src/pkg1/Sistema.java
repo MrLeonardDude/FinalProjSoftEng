@@ -1,5 +1,7 @@
 package pkg1;
 
+import ChatServlet.CreateChatServlet;
+
 import java.sql.SQLException;
 
 public class Sistema {
@@ -12,6 +14,8 @@ public class Sistema {
 	private static HTMLBuilderReuniao htmlBuildReuniao;
 	private static Membro usr;
 	private static HTMLTarefasBuilder tarBUild;
+	private static CreateChatServlet chatBuild;
+
 
 	public Sistema() throws SQLException, ClassNotFoundException {
 		sistTarefa = new SistemaTarefa();
@@ -21,6 +25,7 @@ public class Sistema {
 		htmlBuild = new HTMLBuilder();
         tarBUild = new HTMLTarefasBuilder();
         htmlBuildReuniao = new HTMLBuilderReuniao();
+		chatBuild = new CreateChatServlet();
 	}
 
 	public static synchronized  Sistema getInstance() throws SQLException, ClassNotFoundException{
@@ -84,6 +89,7 @@ public class Sistema {
 		return htmlBuildReuniao;
 	}
 
+	public static CreateChatServlet getChatBuilder(){return chatBuild;}
 
 	public static void setHtmlTarefasBuilder(HTMLTarefasBuilder htmlBuild) {
         Sistema.tarBUild = htmlBuild;

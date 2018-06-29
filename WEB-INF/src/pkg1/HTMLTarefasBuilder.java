@@ -29,14 +29,17 @@ public class HTMLTarefasBuilder {
             for(int i =0; i < pendente.size(); i++) {
                 out.println(
                         "<li class=\"nav-item dropdown\">\n" +
-                                "            <a class=\"nav-link text-dark nav-item bg-primary w3-border-dark-grey dropdown-toggle \" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"
+                                "<a class=\"nav-link text-dark nav-item bg-primary w3-border-dark-grey dropdown-toggle \" href=\"tarefas.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"
                 );
                 out.println(pendente.get(i).getDefinicao());
                 out.println("</a>\n" +
                         "            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +
                         "              <a class=\"dropdown-item\" href=\"historico_tarefa.html\" target=\"conteudo\">Histórico</a>\n" +
                         "              <a class=\"dropdown-item\" href=\"editar_tarefa.html\">Editar Tarefa</a>\n" +
-                        "              <a class=\"dropdown-item\" href=\"tarefas.html\">Excluir Tarefa</a>\n" +
+                        "              <form action=\"delete\" method=\"get\">\n" +
+                        "                   <input type=\"hidden\" name=\"ID\" value=\""+ pendente.get(i).getID() + "\">\n" +
+                        "                   <button type=\"submit\" class=\"dropdown-item\" value=\"Submit\">Excluir Tarefa</button>\n" +
+                        "               </form>\n"+
                         "              <a class=\"dropdown-item\" href=\"tarefas.html\">Concluir Tarefa</a>\n" +
                         "            </div>");
             }

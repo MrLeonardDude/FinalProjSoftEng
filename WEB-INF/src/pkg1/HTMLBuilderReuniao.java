@@ -34,7 +34,7 @@ public class HTMLBuilderReuniao {
                                        "              <div id=\""+ reuniao.get(i).getID()+ "\" class=\"w3-container w3-hide w3-blue-grey\">\n" +
                                        "                <h4>Data : "+reuniao.get(i).getData() + " e Local : "+ reuniao.get(i).getLocal()+"</h4>\n" +
                                        "                <p>" + reuniao.get(i).getPauta()+ "</p>\n" +
-                                       "                              <a class=\"btn btn-primary\"onclick=\"window.location.href = 'r1.html';\" class=\"w3-button w3-left w3-text-white w3-teal\" href=\"reuniao_13.html\" style=\"border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff\">\n" +
+                                       "                              <a class=\"btn btn-primary\" onclick=\"window.location.href = 'r1.html';\" href=\"reuniao_13.html\" style=\"border-top: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff\">\n" +
                                        "                Reunião 13/06&nbsp; </a>\n" +
                                        "            </div>\n" +
                                        "      </li>\n");

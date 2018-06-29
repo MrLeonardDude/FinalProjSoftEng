@@ -21,21 +21,21 @@ public class Pkg1main extends HttpServlet{
     private String Name =null;
 
     private void loadTarefas()throws SQLException {
-        String querry = "Select definicao from tarefas";
-        ArrayList<String> str = mysql.sqlSelect(querry, 1);
+        String querry = "Select ID, definicao, descricao, progressoTotal, estado  from tarefas";
+        ArrayList<String> str = mysql.sqlSelect(querry, 5);
         if(str.size() > 0){
-            for(int i = 0; i < str.size(); i++) {
-                Tarefa task = new Tarefa(str.get(i));
+            for(int i = 0; i < str.size(); i = i + 5) {
+                Tarefa task = new Tarefa(Integer.valueOf(str.get(i)), str.get(i+1), str.get(i+2), Integer.valueOf(str.get(i+3)), str.get(i+4), null, null);
                 sist.getSistTarefa().addTarefa(task);
             }
 
         }
 
-        String querry1 = "Select definicao from tarefas where progressoTotal < 100";
-        ArrayList<String> str1 = mysql.sqlSelect(querry1, 1);
+        String querry1 = "Select ID, definicao, descricao, progressoTotal, estado from tarefas where progressoTotal < 100";
+        ArrayList<String> str1 = mysql.sqlSelect(querry1, 5);
         if(str1.size() > 0){
-            for(int i = 0; i < str1.size(); i++) {
-                Tarefa task = new Tarefa(str1.get(i));
+            for(int i = 0; i < str1.size(); i = i + 5) {
+                Tarefa task = new Tarefa(Integer.valueOf(str.get(i)), str.get(i+1), str.get(i+2), Integer.valueOf(str.get(i+3)), str.get(i+4), null, null);
                 sist.getSistTarefa().addTarefaPendente(task);
             }
 
@@ -85,11 +85,11 @@ public class Pkg1main extends HttpServlet{
                 Name = str.get(0);
                 Membro usr = new Membro(str.get(0),str.get(2), str.get(1), Boolean.TRUE);
                 sist.setMembro(usr);
-                this.loadMembros();
                 this.loadReunioes();
                 this.loadTarefas();
                 String querry2 = "UPDATE membros SET status=1 where username='"+ username+ "'";
                 mysql.sqlUpdate(querry2);
+                this.loadMembros();
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -142,7 +142,4 @@ public class Pkg1main extends HttpServlet{
             throws IOException, ServletException {
         doGet(request, response);
     }
-
-
-
 }

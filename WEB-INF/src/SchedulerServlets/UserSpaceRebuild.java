@@ -2,6 +2,7 @@ package SchedulerServlets;
 
 import pkg1.*;
 
+import javax.lang.model.type.NullType;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
@@ -24,21 +25,21 @@ public class UserSpaceRebuild implements Runnable{
 
 
     private void loadTarefas()throws SQLException {
-        String querry = "Select definicao from tarefas";
-        ArrayList<String> str = mysql.sqlSelect(querry, 1);
+        String querry = "Select ID, definicao, descricao, progressoTotal, estado  from tarefas";
+        ArrayList<String> str = mysql.sqlSelect(querry, 5);
         if(str.size() > 0){
-            for(int i = 0; i < str.size(); i++) {
-                Tarefa task = new Tarefa(str.get(i));
+            for(int i = 0; i < str.size(); i = i + 5) {
+                Tarefa task = new Tarefa(Integer.valueOf(str.get(i)), str.get(i+1), str.get(i+2), Integer.valueOf(str.get(i+3)), str.get(i+4), null, null);
                 sist.getSistTarefa().addTarefa(task);
             }
 
         }
 
-        String querry1 = "Select definicao from tarefas where progressoTotal < 100";
-        ArrayList<String> str1 = mysql.sqlSelect(querry1, 1);
+        String querry1 = "Select ID, definicao, descricao, progressoTotal, estado from tarefas where progressoTotal < 100";
+        ArrayList<String> str1 = mysql.sqlSelect(querry1, 5);
         if(str1.size() > 0){
-            for(int i = 0; i < str1.size(); i++) {
-                Tarefa task = new Tarefa(str1.get(i));
+            for(int i = 0; i < str1.size(); i = i + 5) {
+                Tarefa task = new Tarefa(Integer.valueOf(str.get(i)), str.get(i+1), str.get(i+2), Integer.valueOf(str.get(i+3)), str.get(i+4), null, null);
                 sist.getSistTarefa().addTarefaPendente(task);
             }
 

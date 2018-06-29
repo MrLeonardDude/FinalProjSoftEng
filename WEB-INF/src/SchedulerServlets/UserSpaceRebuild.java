@@ -18,11 +18,19 @@ public class UserSpaceRebuild implements Runnable{
     private HTMLBuilderReuniao htmlReubuild;
     private String Name =null;
     private ServletContext context;
+    private ArrayList<String> fileArray;
+
 
     public UserSpaceRebuild(ServletContext Le_context){
         context = Le_context;
     }
 
+    private ArrayList<String> loadFiles() throws SQLException{
+        ArrayList<String> files;
+        String querry = "Select title from files";
+        files = mysql.sqlSelect(querry, 1);
+        return files;
+    }
 
     private void loadTarefas()throws SQLException {
         String querry = "Select ID, definicao, descricao, progressoTotal, estado  from tarefas";
@@ -94,6 +102,7 @@ public class UserSpaceRebuild implements Runnable{
                 this.loadMembros();
                 this.loadReunioes();
                 this.loadTarefas();
+                fileArray = loadFiles();
                 htmlBuild = sist.getHtmlBuild();
                 htmlTarBuild = sist.getHtmlTarefasBuilder();
                 htmlReubuild = sist.getHtmlReuniaoBuilder();
@@ -103,7 +112,7 @@ public class UserSpaceRebuild implements Runnable{
                 ArrayList<Tarefa> pend = sist.getSistTarefa().getTarefasPendents();
                 ArrayList<Reuniao> reun = sist.getSistReuniao().getReunioes();
                 htmlBuild.makeHome(on, off, pend, Name);
-                htmlTarBuild.makeHome(tar, Name);
+                htmlTarBuild.makeHome(tar, Name, fileArray);
                 htmlReubuild.makeHome(reun, Name);
                 sist.getSistComunicacao().setMembrosOffline(new ArrayList<Membro>());
                 sist.getSistComunicacao().setMembrosOnline(new ArrayList<Membro>());

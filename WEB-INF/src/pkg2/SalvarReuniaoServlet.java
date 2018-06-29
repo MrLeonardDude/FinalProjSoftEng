@@ -32,7 +32,7 @@ public class SalvarReuniaoServlet extends HttpServlet {
     }
 
     private String connectBD(String Name, String nomeTarefa, String descricao, String dataTarefa){
-        String str = "http://localhost:8080/orkut/reunioes.html";
+        String str = "http://localhost:8080/orkut/reunioes_"+Name+".html";
         try{
             mysql = sist.getMysql();
             String querry = "INSERT INTO reuniao (data, local, pauta) values ('"+ dataTarefa +"', '"+nomeTarefa+"', '"+descricao+"' )";

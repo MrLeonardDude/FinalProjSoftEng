@@ -21,8 +21,8 @@ public class MysqlConnect {
     }
 
     private static void connect() throws SQLException, ClassNotFoundException{
-        String user = "java";
-        String password = "l^fV$?)}39^!o.P";
+        String user = "";
+        String password = "";
         Class.forName("com.mysql.jdbc.Driver");
         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/orkutBase?useSSL=true", user, password);
     }
